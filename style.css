@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(52, 34, 34);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    padding:0 20px;
+}
+nav{
+    font-family:Arial, Helvetica, sans-serif;
+}
+nav ul{
+    list-style-type: none;
+    display:flex;
+    align-items: center;
+    height:64px;
+    background-color:rgb(21, 21, 26) ;
+    
+    color: white;
+
+}
+.brand img{
+    width:98px;
+}
+.songlist{
+    width:1px;
+}
+.container{
+      min-height:79vh;
+      background-color: black;
+      color: white;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      display:flex;
+      margin:10px auto;
+      width:72%;
+      border-radius: 8px;
+      padding:10px;
+      background-image: url(bg2.jpg);
+      background-size:cover;
+      background-repeat: no-repeat;
+}
+.bottom{
+    position:sticky;
+    height:82px;
+    color: white;
+    background-color: rgb(17, 17, 18);
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icons{
+    margin-top:10px;
+}
+.icons i{
+    cursor:pointer;
+}
+#myprogressbar{
+    width:150vh;
+    cursor: pointer;
+}
+.songitem{
+    height:50px;
+    display:flex;
+    background-color: rgb(239, 224, 224);
+    color: black;
+    margin:10px;
+    justify-content: space-between;
+     align-items:center ;
+     border-radius: 10px;
+    
+}
+.songitem img{
+    width:48px;
+    margin:0 23px;
+    border-radius: 30px;
+    
+}
+.timestamp{
+    margin:0 23px;
+}
+.timestamp i{
+    cursor:pointer;
+}
+.songinfo{
+    position:absolute;
+    margin-top: 9px;
+    left:14vw;
+
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+}

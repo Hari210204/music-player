@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HARI</title>
+    <link rel="stylesheet" href="styler.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+  </head>
+  
+
+  <body>
+    
+    <header>
+        <div class="polling">
+      <h1>Welcome Bro!</h1>
+      </div>
+    </header>
+
+    <section class="sign-up-form">
+      <form id="input-box">
+        <div>
+          <label for="email"><a style="color:powderblue;">Email:</a></label><br><br>
+          <input type="text" id="email" class="box" placeholder="        email" name="email">
+        </div>
+        <div>
+          <label for="password"><a style="color:powderblue;">Password:</a></label><br><br>
+          <input type="text" id="password" class="box" placeholder="        password" name="password">
+        </div>
+        <button class="btn" type="button" onclick="signUp()">Sign up</button>
+        <button class="btn" type="button" onclick="signIn()">Sign in</button>
+      </form>
+    </section>
+
+  </body>
+<script src="authentic.js"></script>
+</html>
+

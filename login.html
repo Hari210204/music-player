@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Index page!!</h1>
+    <button id="logout-btn">Logout</button>
+
+
+    
+  <script>
+    // Initialize Firebase and set up the configuration
+    // firebase.initializeApp(firebaseConfig);
+
+
+
+    const firebaseConfig = {
+    //firebase config stuff
+    apiKey: "AIzaSyAOO6BwNEh97hjOdZ1_o5E9PnZEe3RfIZA",
+    authDomain: "polling-1c685.firebaseapp.com",
+    databaseURL: "https://polling-1c685-default-rtdb.firebaseio.com",
+    projectId: "polling-1c685",
+    storageBucket: "polling-1c685.appspot.com",
+    messagingSenderId: "197544694710",
+    appId: "1:197544694710:web:2149ae7f04342764596717",
+    measurementId: "G-9YXQC0HFL4"
+  };
+  // Initialize Firebase
+  // firebase.initializeApp(firebaseConfig);
+  const app = firebase.initializeApp(firebaseConfig);
+  // const analytics = getAnalytics(app);
+  const auth = firebase.auth();
+
+    // Call the logout function when the logout button is clicked
+    document.getElementById('logout-btn').addEventListener('click', function() {
+      logout();
+    });
+
+    function logout() {
+    firebase.auth().signOut()
+      .then(function() {
+        window.location.href = 'signup.html'; // Redirect to signin.html
+      })
+      .catch(function(error) {
+        console.log(error.message);
+      });
+  }
+
+
+
+  // Check if the user is authenticated
+firebase.auth().onAuthStateChanged(function(user) {
+  if (!user) {
+    // User is signed in, allow access to index.html
+    window.location.href = 'signup.html';
+  } 
+});
+  </script>
+    
+</body>
+</html>

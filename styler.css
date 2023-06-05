@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    background:url('https://images.unsplash.com/photo-1547127796-06bb04e4b315?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGFyayUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60');
+    background-size: cover;
+    background-attachment: fixed ;
+  }
+  .sign-up-form
+  {
+    background-color: rgba(26, 103, 155, 0.7);
+    padding-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 60px;
+  }
+  
+  
+  
+  
+  
+  .btn
+  {  
+  color:#fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  background-color: #65b3d4;
+  cursor: pointer;
+  }
+  
+  
+  .profile-img
+  {
+  width: 200px;
+  position: absolute;
+  top: 120px;
+  left: calc(75%);
+  }
+  .polling h1
+  {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    font-size: 50px;
+    color:rgba(26, 103, 155, 0.7);
+  }
+  
+  .polling h2
+  {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 30px;
+    color:#594777;
+  }
+  
+  
+  form .box{
+      width: 98.5%;
+      height: 2.8em;
+      position: relative;
+      bottom: 10px;
+      border: 0;
+      border-radius: 10px;
+  }
+  #input-box{
+      width: 90%;
+      margin: auto;
+  }
+  
+  .container{
+    width: 100%;
+    height: 0vh;
+  }
+  nav{
+    display: flex;
+    width: 100%;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+  }
+  
+  nav ul{
+    flex:1;
+    text-align: right;
+    padding-right: 30px;
+  }
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+  }
+  nav ul li a{
+    color:black;
+    text-decoration: none;
+    position: relative;
+  }
+  nav ul li a::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: rgb(222, 95, 31);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+  }
+  nav ul li a:hover::after{
+    width: 50%;
+  }
+  .header{
+    color: white;
+  }
+  .forms{
+    margin-left:40%;
+    margin-top:16%;
+  }
